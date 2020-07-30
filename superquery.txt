@@ -1,0 +1,1 @@
+UPDATE trip set Client_id=(SELECT c.Pcity from cstatus c,dstatus d where c.Pcity=d.City and d.status='available' and c.Vtype=d.Vtype)
